@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/solarized.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+		<style>
+			/* Battery animation styles */
+			.battery-container {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
+			}
+			.battery {
+				width: 60px;
+				height: 150px;
+				border: 3px solid #333;
+				border-radius: 8px;
+				position: relative;
+				overflow: hidden;
+			}
+			.battery::before {
+				content: '';
+				position: absolute;
+				top: -12px;
+				left: 18px;
+				width: 24px;
+				height: 8px;
+				background-color: #333;
+				border-radius: 3px;
+			}
+			.fill {
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				background-color: #4CAF50;
+				animation-duration: 10s;
+				animation-timing-function: linear;
+				animation-iteration-count: infinite;
+			}
+			/* Animation for Neurotypical (NT) */
+			.nt .fill {
+				animation-name: ntBatteryFill;
+			}
+			/* Animation for Neurodivergent (ND) */
+			.nd .fill {
+				animation-name: ndBatteryFill;
+			}
+			/* Keyframes for NT battery */
+			@keyframes ntBatteryFill {
+				0% { height: 80%; background-color: #4CAF50; }
+				10% { height: 70%; background-color: #4CAF50; }
+				20% { height: 60%; background-color: #4CAF50; }
+				30% { height: 55%; background-color: #4CAF50; }
+				40% { height: 60%; background-color: #4CAF50; }
+				50% { height: 70%; background-color: #4CAF50; }
+				60% { height: 80%; background-color: #4CAF50; }
+				70% { height: 80%; background-color: #4CAF50; }
+				80% { height: 80%; background-color: #4CAF50; }
+				90% { height: 80%; background-color: #4CAF50; }
+				100% { height: 80%; background-color: #4CAF50; }
+			}
+			/* Keyframes for ND battery */
+			@keyframes ndBatteryFill {
+				0% { height: 80%; background-color: #4CAF50; }
+				10% { height: 50%; background-color: #4CAF50; }
+				20% { height: 40%; background-color: #4CAF50; }
+				30% { height: 35%; background-color: orange; }
+				40% { height: 30%; background-color: orange; }
+				50% { height: 25%; background-color: orange; }
+				60% { height: 20%; background-color: orange; }
+				70% { height: 40%; background-color: #4CAF50; }
+				80% { height: 60%; background-color: #4CAF50; }
+				90% { height: 80%; background-color: #4CAF50; }
+				100% { height: 80%; background-color: #4CAF50; }
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Sustainable Mental Peace</h1>
+					<p>With GenAI</p>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Sustainable Mental Peace
+						Steady, reliable presence of calm.
+						---
+						## Sustainable Mental Peace
+						Steady, reliable presence of calm.
+						
+						(vs. mental chaos, distraction, overwhelm.)
+						---
+						## Neurodivergence (ND)
+						(vs. "Neurotypical" (NT))
+						
+						ADHD, Autism, Dyslexia, and more
+						
+						---
+						# Where to begin? 
+						Been using GenAI for _everything_ so you don't have to.
+
+						Will cover best uses, some ND background, expert mode, and GenAI principles.
+						---
+						## Sustainable Mental Peace
+						![Sustainable Mental Peace diagram](assets/diagram.svg)
+						---
+						# 1. Recover from Emotions
+						[Voice mode:]
+						“I’m feeling terrible right now, help me process this.”
+						---
+						# The ND Link
+						Emotional processing difficulties in ADHD and Autism
+						
+						Also affects anxious, depressed, and CPTSD
+						---
+						<section>
+							<!-- <h1 class="r-fit-text">stronger reaction</h1> -->
+							<div class="r-hstack">	
+								<div class="battery-container">
+									<div class="battery nt">
+										<div class="fill"></div>
+									</div>
+									<p class="caption">Neurotypical (NT)</p>
+								</div>
+								<div style="width: 100px;"></div> <!-- Spacer div -->
+								<div class="battery-container">
+									<div class="battery nd">
+										<div class="fill"></div>
+									</div>
+									<p class="caption">Neurodivergent (ND)</p>
+								</div>
+							</div>
+						</section>
+
+						---
+						# Mid-level tier
+						Use voice mode for AI Therapist
+
+						"Collect my thoughts; don't interrupt me"
+
+						"What am I missing? Why is this so hard for me?"
+						---
+						# Expert mode 
+						[System prompt] Mention ND, choose verbosity
+						
+						[In chat] Ask for modality like IFS or CBT
+						
+						Cognitive distortions, protectors... so fun!
+						---
+						# AI > Real Therapy
+						Always available
+
+						Therefore no pre-practice necessary
+						
+						Trained on entire human experience
+						
+						Understands ND
+
+						---
+						# Real Therapy > AI
+						Nah, it's actually better, imo. And I loved therapy...
+						
+						YMMV of course, try it!
+						---
+						# Where am I now?
+						[Before] 1-2 days of distraction, lost sleep
+
+						[After] Feeling calm in less time than a 1-1
+
+						TODO: Collective Sigh of relief image/cue 
+						---
+						When I remember to use it...
+						---
+						## Sustainable Mental Peace
+						![Sustainable Mental Peace diagram](assets/diagram.svg)
+						---
+						# 2. Overcome Stuck Points
+						Managers: "It's all fun and games until John gets stuck."
+						---
+						Stuck is an ADHD Specialty
+						
+						Low dopamine, low motivation, high self talk
+						
+						Hard to make decisions, hard to start or finish tasks
+
+						Overwhelm follows
+						---
+						Not sustainable
+						
+						Not peaceful
+
+						2/10 would not recommend
+						---
+						## Compulsory Self care slide
+						Meds, coffee, food, water
+						
+						Move, breathe
+						
+						---
+						Still stuck?
+						---
+
+						Then it's time to give in...
+
+						---
+
+						If this were hard, you wouldn't do it.
+
+						---
+
+						Because you're stuck.
+
+						---
+
+						So, open up Voice mode... [later]
+
+						---
+						And say it with me... [now]
+						
+						---
+						
+						"I'm stuckkkkkkkk HAAAAALPP"
+
+						---
+						works 80% of the time, every time 
+
+						---
+						and results > reasons
+
+						---
+						but since we're here
+
+						---
+						# Reasons
+						---
+						# Reasons
+						Conscious complaining works!
+						---
+						# Reasons
+						Reminds you of your own advice, values, goals
+
+						Rigid thinking - proposes another framing
+
+						Too zoomed in - proposes a wider view
+
+						---
+						# Reasons
+						Reads between the lines for what you're "missing here"
+
+						Or why something is "so hard"
+
+						Or why that person is "messing with your shit" 
+
+						
+						
+						(TODO are we allowed to say shit?)
+
+						---
+						# Impact
+						TODO
+						---
+						## Sustainable Mental Peace
+						![Sustainable Mental Peace diagram](assets/diagram.svg)
+						---
+						Hey remember earlier?
+						---
+						When you were stuck?
+						---
+						Was it because of...
+						---
+						# 3. Planning & Communication
+						---
+						"Do it the way that works for _your_ brain."
+						---
+						So true
+						---
+						So true, sometimes.
+						---
+						But in this case
+						---
+						But in this case, 
+						
+						you have to talk to them.
+						---
+						So I have something better...
+						---
+						## Neurotypical AI Shim
+						---
+						# Planning
+						---
+						## Use cases
+						Choose a perfection-standard based on goals/values
+						
+						Break into milestones
+						
+						Give time realistic time estimates
+						
+						Prioritize
+						---
+						## Tips
+						Use thinking capable models like o1-preview
+						
+						Give it a NT's memo for structure
+						---
+						## Expert mode
+						* Peg Dawson prompt TODO
+						---
+						## Wait did you say the "M" word?
+						Yes, I said milestones.
+						---
+						Director:
+						"How's your big project coming along?"
+						---
+						Director:
+						"How's your big project coming along?"
+						
+						Future you:
+						
+						---
+						Director:
+						"How's your big project coming along?"
+						
+						Future you:
+						
+						"On track for milestone 1! Excited to show you then!"
+						---
+
+						Director:
+						"How's your big project coming along?"
+						
+						Future you:
+						
+						"On track for milestone 1! Excited to show you then!"
+						---
+						Back to the corner!
+						---
+						
+						# Communication
+						Writing memos, agendas, etc.
+						
+						And for that "quick message" you haven't sent yet
+						---
+						# Pro Tips
+						
+						Give it an example of your writing style
+						
+						Use Q&A format in documents: More forgiving on writing style. Easy to generate. Malleable.
+						
+						Try a mock Q&A before a big meeting with voice mode
+						
+						---
+						# Expert mode
+						
+						Write in bullet points until very end. Edit bullets and ask it to update the prose.
+						
+						Generate examples, patterns, and CS analogies to be succinct and clear with peers. Same for inbound!
+
+						"Shape shifting" - reuse your standup notes for a meeting agenda, or a blog post, or a presentation.
+
+						---
+						Self care
+						---
+						## Sustainable Mental Peace
+						![Sustainable Mental Peace diagram](assets/diagram.svg)
+						---
+						# 4. More Flow
+						---
+						"Interest based nervous system" 
+						---
+						## A "Job" (NT)
+						
+						Some parts you enjoy, some you don't enjoy.
+						---
+						NT Advice: "So just learn to deal with that."
+						---
+						## A "Job" (ND)
+						Some parts you ~~enjoy~~ are obsessed with, 
+						
+						some you ~~don't enjoy~~ loathe.
+						---
+						Since you're sitting here,
+						
+						I bet you're _really_ good at your obsessions.
+						---
+						So [I, company, world]
+						
+						need you to _do those things_.
+						---
+						Plus, it's 2024. We have the technology!
+						---
+						To automate that other stuff with 
+						## GenAI
+						---
+						## MVP Prompting
+						[IDE copilot] highlight method, ask to generate tests + docs
+						
+						Rewrite this from Groovy to Kotlin
+						---
+						## Strategies
+						* Set a persona/role
+						* Read first, "Only update if there are changes"
+						* Think out loud
+
+						---
+						## Principles 
+						Language tasks only!
+						
+						Explain it like it's a junior engineer
+
+						That PB&J Challenge
+
+						---
+						## Expert mode
+						* Use a team of agents
+						* Ask for a "code review" of your code
+						* Add engineering glue to fully automate, like auto doc updater or PR review bot, or fix compiler issues loop
+						* Use GenAI to generate the prompts
+
+						---
+						## Practice
+						* Use it regularly to understand strengths/weaknesses
+						* Be "smart lazy" - automate the boring stuff
+						* Don't automate things you enjoy!
+						* Stay up to date with new models and new copilots
+						---
+						Now spend more time on your obsessions. 
+
+						Or get obsessed with GenAI, like me!
+
+						---
+						## self care 
+						
+						---
+						## Sustainable Mental Peace
+						![Sustainable Mental Peace diagram](assets/diagram.svg)
+						---
+						# 5. Dream Big
+						
+						---
+						## Sustainable Mental Peace
+						---
+
+						## Q&A #1
+						**Am I neurodivergent?**
+
+						Try IDRLabs, then doctor
+
+						<img src="assets/idrlabs-link.png" alt="IDRLabs Link" width="200px">
+						
+					</script>
+				</section>
+				
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				transition: "none",
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+
+			// Function to reset the battery animation
+			function resetBatteryAnimation() {
+				document.querySelectorAll('.fill').forEach(fill => {
+				fill.classList.remove('fill'); // Remove the class to reset the animation
+				void fill.offsetWidth;         // Trigger a reflow to restart the animation
+				fill.classList.add('fill');    // Re-add the class
+				});
+			}
+			
+			// Listen to the Reveal.js slide change event and reset animation
+			Reveal.on('slidechanged', (event) => {
+				resetBatteryAnimation();
+			});
+		</script>
+	</body>
+</html>
